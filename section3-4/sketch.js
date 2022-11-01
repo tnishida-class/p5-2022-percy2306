@@ -5,16 +5,22 @@ let grabbed; // 円をつかんでいるかどうかを記憶するために使�
 function setup(){
   createCanvas(windowWidth, windowHeight);
   x = width / 2;
+  // x = windowWidth / 2;
   y = height / 2;
+  // y =  windowHeight / 2;
+  // vx = 0;
+  // vy = 0;
   vx = 0;
   vy = 0;
   grabbed = false;
 }
 
-
 function draw(){
   background(160, 192, 255);
   ellipse(x, y, 30);
+  console.log(mouseX);
+
+  ellipse(mouseX, mouseY, 15);
   if(!grabbed){ // つかんでいないときだけアニメーションさせる
     x += vx;
     y += vy;

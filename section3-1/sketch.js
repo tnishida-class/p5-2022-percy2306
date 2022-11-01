@@ -12,5 +12,6 @@ function draw(){
   for(let i = 0; i < 10; i++){
     ellipse(width * i / 10, height * (10 - i) / 10, 20);
   }
-  text("center!", width * 0.5, height * 0.5);
+  text("center!", 205, 205);
+  // text("center!", width * 0.5, height * 0.5);
 }
